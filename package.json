@@ -1,0 +1,35 @@
+{
+  "name": "tune_heart_beat-node-server-app",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Node.js HTTP Web server for the tune heart beat application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhmadElIdrissiAmiri/tune-heart-beat-server.git"
+  },
+  "keywords": [
+    "Node",
+    "REST",
+    "Server",
+    "HTTP"
+  ],
+  "author": "Ahmad El Idrissi Amiri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AhmadElIdrissiAmiri/tune-heart-beat-server/issues"
+  },
+  "homepage": "https://github.com/AhmadElIdrissiAmiri/tune-heart-beat-server#readme",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^8.0.1"
+  }
+}
