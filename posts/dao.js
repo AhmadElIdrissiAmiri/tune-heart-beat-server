@@ -1,6 +1,6 @@
 import model from "./model.js";
 
-export const findAllPosts = () => model.find();
+export const findAllPosts = () => model.find().populate('user');
 
 export const createPost = async (userId, post) => {
   const createdPost = await model.create({ user: userId, ...post });
@@ -20,6 +20,6 @@ export const deletePost = async (postId) => {
   return deletedPost;
 };
 export const fetchPostById = async (postId) => {
-  const post = await model.findById(postId);
+  const post = await model.findById(postId).populate("user");
   return post;
 };
